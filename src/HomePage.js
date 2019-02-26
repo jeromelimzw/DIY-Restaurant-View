@@ -7,23 +7,36 @@ import { getRestaurants } from "./services/restaurantService";
 class HomePage extends Component {
   constructor(props) {
     super(props);
-    this.state = { restaurants: [], selectedCuisine: "", sortBy: "" };
+    this.state = { restaurants: [], selectedCuisine: undefined, sorting: "" };
   }
   componentDidMount() {
-    this.setState({ restaurants: getRestaurants() });
+    this.setState({
+      restaurants: getRestaurants(),
+      selectedCuisine: "",
+      sorting: "AZ"
+    });
   }
 
+  handleSortBy = event => {
+    this.setState({ sorting: event.target.value });
+  };
+
+  handleFilterCuisine = event => {
+    this.setState({ selectedCuisine: event.target.value });
+  };
+
   render() {
-    const { restaurants, selectedCuisine, sortBy } = this.state;
+    const { restaurants, selectedCuisine, sorting } = this.state;
+    const { handleSortBy, handleFilterCuisine } = this;
     return (
       <div>
+        <FilterBar handleFilterCuisine={handleFilterCuisine} />
+        <SortByBar handleSortBy={handleSortBy} />
         <RestaurantList
           restaurants={restaurants}
           selectedCuisine={selectedCuisine}
-          sortBy={sortBy}
+          sorting={sorting}
         />
-        <FilterBar />
-        <SortByBar />
       </div>
     );
   }
