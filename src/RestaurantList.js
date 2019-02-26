@@ -25,6 +25,8 @@ const RestaurantList = ({ restaurants, selectedCuisine, sorting }) => {
             cuisine={a.cuisine.name}
             price={a.averagePrice}
             address={a.address}
+            openTime={a.openingTime}
+            closeTime={a.closingTime}
           />
         ))}
     </div>

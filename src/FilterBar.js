@@ -2,7 +2,8 @@ import React from "react";
 import { getCuisines } from "./services/cuisineService";
 
 const FilterBar = ({ handleFilterCuisine }) => {
-  const buttonClass = "f3 br3 bw2 bg-light-green b--green shadow-5 pointer";
+  const buttonClass =
+    "f3 hover-bg-purple hover-white b--purple link ph3 pv2 purple pointer";
   return (
     <div>
       <button

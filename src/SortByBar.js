@@ -3,7 +3,7 @@ import React from "react";
 const SortByBar = ({ handleSortBy }) => {
   return (
     <select
-      className="f3 br3 bg-light-blue b--blue bw2 w-20 tc"
+      className="f3 b--purple purple hover-bg-purple hover-white w-20 tc bg-transparent bw1 pointer"
       onChange={handleSortBy}
     >
       <option value="AZ">A-Z</option>
