@@ -27,6 +27,7 @@ const RestaurantList = ({ restaurants, selectedCuisine, sorting }) => {
             address={a.address}
             openTime={a.openingTime}
             closeTime={a.closingTime}
+            postCode={a.postCode}
           />
         ))}
     </div>

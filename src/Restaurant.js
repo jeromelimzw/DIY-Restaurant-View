@@ -7,7 +7,8 @@ const Restaurant = ({
   price,
   address,
   closeTime,
-  openTime
+  openTime,
+  postCode
 }) => {
   return (
     <div className="w-20-l w-30-m w-100-ns  pa1 bg-washed-blue ma4 shadow-5 br3 b--purple bw2 ba pa2 animated fadeIn ">
@@ -16,7 +17,14 @@ const Restaurant = ({
       <img src={imageUrl} alt={name} className="w-100 ba b--silver" />
       <h2 className="ma0">{name}</h2>
       <hr />
-      <h4 className="ma0">{address}</h4>
+      <a
+        className="ma0 no-underline black"
+        href={`https://www.google.com/maps/dir/Current+Location/Singapore+${postCode}`}
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        {address}
+      </a>
       <hr />
       <h3 className="ma0">
         {openTime}-{closeTime}

@@ -7,7 +7,8 @@ let restaurants = [
     closingTime: "22:30",
     cuisine: { _id: "5c3430ecfc13ae122d000000", name: "Western" },
     imageUrl: "images/restaurants/5c342ac9fc13ae39f8000000.jpg",
-    averagePrice: 25
+    averagePrice: 25,
+    postCode: "049824"
   },
   {
     _id: "5c342ac9fc13ae39f8000001",
@@ -17,7 +18,8 @@ let restaurants = [
     closingTime: "21:30",
     cuisine: { _id: "5c3430ecfc13ae122d000000", name: "Western" },
     imageUrl: "images/restaurants/5c342ac9fc13ae39f8000001.jpg",
-    averagePrice: 12
+    averagePrice: 12,
+    postCode: "069119"
   },
   {
     _id: "5c342ac9fc13ae39f8000002",
@@ -27,7 +29,8 @@ let restaurants = [
     closingTime: "21:30",
     cuisine: { _id: "5c3430ecfc13ae122d000000", name: "Western" },
     imageUrl: "images/restaurants/5c342ac9fc13ae39f8000002.jpg",
-    averagePrice: 10
+    averagePrice: 10,
+    postCode: "059413"
   },
   {
     _id: "5c342ac9fc13ae39f8000003",
@@ -38,7 +41,8 @@ let restaurants = [
     closingTime: "22:00",
     cuisine: { _id: "5c3430ecfc13ae122d000001", name: "Japanese" },
     imageUrl: "images/restaurants/5c342ac9fc13ae39f8000003.jpg",
-    averagePrice: 20
+    averagePrice: 20,
+    postCode: "059817"
   },
   {
     _id: "5c342ac9fc13ae39f8000004",
@@ -49,7 +53,8 @@ let restaurants = [
     closingTime: "20:00",
     cuisine: { _id: "5c3430ecfc13ae122d000001", name: "Japanese" },
     imageUrl: "images/restaurants/5c342ac9fc13ae39f8000004.jpg",
-    averagePrice: 15
+    averagePrice: 15,
+    postCode: "048616"
   },
   {
     _id: "5c342ac9fc13ae39f8000005",
@@ -59,7 +64,8 @@ let restaurants = [
     closingTime: "22:30",
     cuisine: { _id: "5c3430ecfc13ae122d000002", name: "Thai" },
     imageUrl: "images/restaurants/5c342ac9fc13ae39f8000005.jpg",
-    averagePrice: 25
+    averagePrice: 25,
+    postCode: "049014"
   },
   {
     _id: "5c342ac9fc13ae39f8000006",
@@ -70,7 +76,8 @@ let restaurants = [
     closingTime: "20:00",
     cuisine: { _id: "5c3430ecfc13ae122d000002", name: "Thai" },
     imageUrl: "images/restaurants/5c342ac9fc13ae39f8000006.jpg",
-    averagePrice: 7
+    averagePrice: 7,
+    postCode: "069111"
   },
   {
     _id: "5c342ac9fc13ae39f8000007",
@@ -81,7 +88,8 @@ let restaurants = [
     closingTime: "19:00",
     cuisine: { _id: "5c3430ecfc13ae122d000003", name: "Chinese" },
     imageUrl: "images/restaurants/5c342ac9fc13ae39f8000007.jpg",
-    averagePrice: 28
+    averagePrice: 28,
+    postCode: "069111"
   },
   {
     _id: "5c342ac9fc13ae39f8000008",
@@ -91,7 +99,8 @@ let restaurants = [
     closingTime: "20:30",
     cuisine: { _id: "5c3430ecfc13ae122d000003", name: "Chinese" },
     imageUrl: "images/restaurants/5c342ac9fc13ae39f8000008.jpg",
-    averagePrice: 10
+    averagePrice: 10,
+    postCode: "048819"
   },
   {
     _id: "5c342ac9fc13ae39f8000009",
@@ -102,7 +111,8 @@ let restaurants = [
     closingTime: "21:30",
     cuisine: { _id: "5c3430ecfc13ae122d000003", name: "Chinese" },
     imageUrl: "images/restaurants/5c342ac9fc13ae39f8000009.jpg",
-    averagePrice: 30
+    averagePrice: 30,
+    postCode: "059413"
   }
 ];
 
