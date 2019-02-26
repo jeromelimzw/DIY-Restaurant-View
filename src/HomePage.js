@@ -30,8 +30,11 @@ class HomePage extends Component {
     const { handleSortBy, handleFilterCuisine } = this;
     return (
       <div>
-        <FilterBar handleFilterCuisine={handleFilterCuisine} />
-        <SortByBar handleSortBy={handleSortBy} />
+        <div className="flex justify-between">
+          <FilterBar handleFilterCuisine={handleFilterCuisine} />
+          <SortByBar handleSortBy={handleSortBy} />
+        </div>
+
         <RestaurantList
           restaurants={restaurants}
           selectedCuisine={selectedCuisine}

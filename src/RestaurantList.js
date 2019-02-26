@@ -3,7 +3,7 @@ import Restaurant from "./Restaurant";
 
 const RestaurantList = ({ restaurants, selectedCuisine, sorting }) => {
   return (
-    <div className="flex flex-wrap justify-around ">
+    <div className="flex flex-wrap ">
       {restaurants
         .filter(a => a.cuisine.name.includes(selectedCuisine))
         .sort((a, b) => {
@@ -24,6 +24,7 @@ const RestaurantList = ({ restaurants, selectedCuisine, sorting }) => {
             imageUrl={a.imageUrl}
             cuisine={a.cuisine.name}
             price={a.averagePrice}
+            address={a.address}
           />
         ))}
     </div>
